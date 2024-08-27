@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Tiny Bakes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff7e6; /* Light bakery-themed background */
+    }
+    .navbar {
+      background-color: #d2691e; /* Chocolate brown color */
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #8b4513; /* Darker brown on hover */
+    }
+    .navbar-brand:hover {
+      color: #fff;
+    }
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #d2691e;
+    }
+    .card {
+      margin: 20px 0;
+    }
+    .card-img-top {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .cart-container {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">The Tiny Bakes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 class="section-title">Cakes</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cake01.jpg" class="card-img-top" alt="Vanilla Cake">
+          <div class="card-body">
+            <h5 class="card-title">½KG Vanilla cake</h5>
+            <p class="card-text">Classic and fluffy vanilla cake.</p>
+            <p class="card-text"><strong>Price:</strong> 275₹</p>
+            <button class="btn btn-primary add-to-cart" data-name="½KG Vanilla cake" data-price="275">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cake2.jpg" class="card-img-top" alt="Chocolate Cake">
+          <div class="card-body">
+            <h5 class="card-title">½KG Chocolate cake</h5>
+            <p class="card-text">Delicious and moist chocolate cake.</p>
+            <p class="card-text"><strong>Price:</strong> 340₹</p>
+            <button class="btn btn-primary add-to-cart" data-name="½KG Chocolate cake" data-price="340">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cake3.jpg" class="card-img-top" alt="Choco Truffle Cake">
+          <div class="card-body">
+            <h5 class="card-title">½KG Choco truffle cake</h5>
+            <p class="card-text">Rich and indulgent choco truffle cake.</p>
+            <p class="card-text"><strong>Price:</strong> 450₹</p>
+            <button class="btn btn-primary add-to-cart" data-name="½KG Choco truffle cake" data-price="450">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cake4.jpg" class="card-img-top" alt="Strawberry Cake">
+          <div class="card-body">
+            <h5 class="card-title">½KG Strawberry cake</h5>
+            <p class="card-text">Fresh and fruity strawberry cake.</p>
+            <p class="card-text"><strong>Price:</strong> 320₹</p>
+            <button class="btn btn-primary add-to-cart" data-name="½KG Strawberry cake" data-price="320">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cake5.jpg" class="card-img-top" alt="Black Current Cake">
+          <div class="card-body">
+            <h5 class="card-title">½KG Black current cake</h5>
+            <p class="card-text">Tangy and sweet black current cake.</p>
+            <p class="card-text"><strong>Price:</strong> 320₹</p>
+            <button class="btn btn-primary add-to-cart" data-name="½KG Black current cake" data-price="320">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cake6.jpg" class="card-img-top" alt="Black Forest Cake">
+          <div class="card-body">
+            <h5 class="card-title">½KG Black forest cake</h5>
+            <p class="card-text">Decadent black forest cake with cherries and cream.</p>
+            <p class="card-text"><strong>Price:</strong> 400₹</p>
+            <button class="btn btn-primary add-to-cart" data-name="½KG Black forest cake" data-price="400">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Cookies</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cookie1.jpg" class="card-img-top" alt="Spritz Cookies">
+          <div class="card-body">
+            <h5 class="card-title">Spritz cookies</h5>
+            <p class="card-text">Buttery and delicious spritz cookies.</p>
+            <p class="card-text"><strong>Price:</strong> 35₹</p>
+            <button class="btn btn-primary add-to-cart" data-name="Spritz cookies" data-price="35">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cookie2.jpg" class="card-img-top" alt="Oatmeal Biscuit">
+          <div class="card-body">
+            <h5 class="card-title">Oatmeal biscuit</h5>
+            <p class="card-text">Hearty oatmeal biscuits with a chewy center.</p>
+            <p class="card-text"><strong>Price:</strong> 40₹</p>
+            <button class="btn btn-primary add-to-cart" data-name="Oatmeal biscuit" data-price="40">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cookie3.jpg" class="card-img-top" alt="Choco Nut Cookie">
+          <div class="card-body">
+            <h5 class="card-title">Choco nut cookie</h5>
+            <p class="card-text">Rich chocolate cookies with crunchy nuts.</p>
+            <p class="card-text"><strong>Price:</strong> 45₹</p>
+            <button class="btn btn-primary add-to-cart" data-name="Choco nut cookie" data-price="45">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cookie4.jpg" class="card-img-top" alt="Karichi Biscuit">
+          <div class="card-body">
+            <h5 class="card-title">Karichi biscuit</h5>
+            <p class="card-text">Traditional karichi biscuits with a delightful taste.</p>
+            <p class="card-text"><strong>Price:</strong> 30₹</p>
+            <button class="btn btn-primary add-to-cart" data-name="Karichi biscuit" data-price="30">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cookie5.jpg" class="card-img-top" alt="Nutella Biscuit">
+          <div class="card-body">
+            <h5 class="card-title">Nutella biscuit</h5>
+            <p class="card-text">Flavored with aromatic hot nutella.</p>
+            <p class="card-text"><strong>Price:</strong> 25₹</p>
+            <button class="btn btn-primary add-to-cart" data-name="Nutella biscuit" data-price="25">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cookie6.jpg" class="card-img-top" alt="Peanut Butter Cookie">
+          <div class="card-body">
+            <h5 class="card-title">Peanut Butter cookie</h5>
+            <p class="card-text">Classic Peanut Butter cookies.</p>
+            <p class="card-text"><strong>Price:</strong> 50₹</p>
+            <button class="btn btn-primary add-to-cart" data-name="Peanut Butter cookie" data-price="50">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Brownies</h2>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <img src="plain_brownie.jpg" class="card-img-top" alt="Plain Brownie">
+      <div class="card-body">
+        <h5 class="card-title">Plain Brownie</h5>
+        <p class="card-text">Classic plain brownie.</p>
+        <p class="card-text"><strong>Price:</strong> 45₹</p>
+        <button class="btn btn-primary add-to-cart" data-name="Plain Brownie" data-price="45">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="chocolate_brownie.jpg" class="card-img-top" alt="Chocolate Brownie">
+      <div class="card-body">
+        <h5 class="card-title">Chocolate Brownie</h5>
+        <p class="card-text">Rich and fudgy chocolate brownie.</p>
+        <p class="card-text"><strong>Price:</strong> 55₹</p>
+        <button class="btn btn-primary add-to-cart" data-name="Chocolate Brownie" data-price="55">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="cream_cheese_brownie.jpg" class="card-img-top" alt="Cream Cheese Brownie">
+      <div class="card-body">
+        <h5 class="card-title">Cream Cheese Brownie</h5>
+        <p class="card-text">Decadent cream cheese topped brownie.</p>
+        <p class="card-text"><strong>Price:</strong> 65₹</p>
+        <button class="btn btn-primary add-to-cart" data-name="Cream Cheese Brownie" data-price="65">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <img src="walnut_brownie.jpg" class="card-img-top" alt="Walnut Brownie">
+      <div class="card-body">
+        <h5 class="card-title">Walnut Brownie</h5>
+        <p class="card-text">Nutty and rich walnut brownie.</p>
+        <p class="card-text"><strong>Price:</strong> 50₹</p>
+        <button class="btn btn-primary add-to-cart" data-name="Walnut Brownie" data-price="50">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="nutella_brownie.jpg" class="card-img-top" alt="Nutella Brownie">
+      <div class="card-body">
+        <h5 class="card-title">Nutella Brownie</h5>
+        <p class="card-text">Indulgent Nutella-infused brownie.</p>
+        <p class="card-text"><strong>Price:</strong> 70₹</p>
+        <button class="btn btn-primary add-to-cart" data-name="Nutella Brownie" data-price="70">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="oreo_brownie.jpg" class="card-img-top" alt="Oreo Brownie">
+      <div class="card-body">
+        <h5 class="card-title">Oreo Brownie</h5>
+        <p class="card-text">Crunchy Oreo cookie topped brownie.</p>
+        <p class="card-text"><strong>Price:</strong> 50₹</p>
+        <button class="btn btn-primary add-to-cart" data-name="Oreo Brownie" data-price="50">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Tiny Bakes. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="cart-container container">
+    <h3 class="section-title">Shopping Cart</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price (₹)</th>
+          <th>Quantity</th>
+          <th>Total (₹)</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="cart-items"></tbody>
+    </table>
+    <div class="text-end">
+      <h4>Total: ₹<span id="total-price">0</span></h4>
+      <button class="btn btn-success" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+
+  <script>
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    function addToCart(name, price) {
+      const item = cart.find(i => i.name === name);
+      if (item) {
+        item.quantity++;
+      } else {
+        cart.push({ name, price, quantity: 1 });
+      }
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    function renderCart() {
+      const cartItems = document.getElementById('cart-items');
+      cartItems.innerHTML = '';
+      let totalPrice = 0;
+      cart.forEach(item => {
+        const itemTotal = item.price * item.quantity;
+        totalPrice += itemTotal;
+        cartItems.innerHTML += `
+          <tr>
+            <td>${item.name}</td>
+            <td>${item.price}</td>
+            <td>
+              <input type="number" value="${item.quantity}" min="1" onchange="updateQuantity('${item.name}', this.value)">
+            </td>
+            <td>${itemTotal}</td>
+            <td><button class="btn btn-danger btn-sm" onclick="removeFromCart('${item.name}')">Remove</button></td>
+          </tr>
+        `;
+      });
+      document.getElementById('total-price').innerText = totalPrice;
+    }
+
+    function updateQuantity(name, quantity) {
+      const item = cart.find(i => i.name === name);
+      if (item) {
+        item.quantity = parseInt(quantity);
+        if (item.quantity < 1) item.quantity = 1;
+        localStorage.setItem('cart', JSON.stringify(cart));
+        renderCart();
+      }
+    }
+
+    function removeFromCart(name) {
+      cart = cart.filter(i => i.name !== name);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    function checkout() {
+      alert('Thank you for your purchase!');
+      cart = [];
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function() {
+        const name = this.getAttribute('data-name');
+        const price = parseInt(this.getAttribute('data-price'));
+        addToCart(name, price);
+      });
+    });
+
+    function checkout() {
+      localStorage.setItem('cart', JSON.stringify(cart));
+      window.location.href = 'payment.html';
+    }
+
+    renderCart();
+  </script>
+</body>
+</html>
